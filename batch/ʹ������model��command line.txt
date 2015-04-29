@@ -1,0 +1,48 @@
+Compile Java 的command
+
+javac -cp ./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar ShiftReduceDemo.java
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce_train -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile Segmented_Entry_positive_training.txt  -outFile  FullPasingResult_Segmented_Entry_positive_training.txt
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce_train -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile Segmented_Entry_negative_training.txt  -outFile  FullPasingResult_Segmented_Entry_negative_training.txt
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce_train -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile Segmented_Entry_positive_testing.txt  -outFile  FullPasingResult_Segmented_Entry_positive_testing.txt
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce_train -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile Segmented_Entry_negative_testing.txt  -outFile  FullPasingResult_Segmented_Entry_negative_testing.txt
+
+
+
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar ShiftReduceDemo -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger
+
+javac -cp ./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar parsing_ShiftReduce.java
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile segmented_negative_testing.txt  -outFile  FullPasingResult_segmented_negative_testing.txt
+
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile segmented_positive_testing.txt  -outFile FullPasingResult_segmented_positive_testing.txt
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile segmented_positive_training.txt  -outFile FullPasingResult_segmented_positive_training.txt
+
+java -cp .:./stanford-parser-full-2015-01-30/stanford-parser.jar:./stanford-postagger-full-2015-01-30/stanford-postagger-3.5.0.jar:./stanford-parser-full-2015-01-30/stanford-srparser-2014-10-23-models.jar parsing_ShiftReduce -model edu/stanford/nlp/models/srparser/chineseSR.ser.gz -tagger ./stanford-postagger-full-2015-01-30/models/chinese-distsim.tagger -textFile segmented_negative_training.txt  -outFile FullPasingResult_segmented_negative_training.txt
+
+使用Neuron based dependency parser的command line
+./stanford-parser-full-2015-01-30/lexparser-lang_dependency_dnn.sh edu/stanford/nlp/models/parser/nndep/CTB_CoNLL_params.txt.gz Bangkok_negative_seg.out Bangkok_negative_parse_result
+
+./stanford-parser-full-2014-08-27/lexparser-lang.sh Chinese 1000 edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz Bangkok_negative_parse_result Bangkok_negative_seg.out
+
+edu/stanford/nlp/models/parser/nndep/CTB_CoNLL_params.txt.gz
+./stanford-parser-full-2015-01-30/lexparser-lang_dependency.sh Chinese 1000 edu/stanford/nlp/models/parser/nndep/CTB_CoNLL_params.txt.gz Bangkok_negative_parse_result Bangkok_negative_seg.out
+
+java edu.stanford.nlp.parser.nndep.DependencyParser -model modelOutputFile.txt.gz -textFile rawTextToParse -outFile dependenciesOutputFile.txt
+
+./stanford-parser-full-2015-01-30/lexparser-lang_dependency_dnn.sh edu/stanford/nlp/models/parser/nndep/CTB_CoNLL_params.txt.gz Bangkok_negative_parse_result Bangkok_negative_seg.out
+
+./stanford-parser-full-2015-01-30/lexparser-lang_Shift.sh Chinese 1000 edu/stanford/nlp/models/srparser/chineseSR.ser.gz Bangkok_negative_parse_result Bangkok_negative_seg.out
