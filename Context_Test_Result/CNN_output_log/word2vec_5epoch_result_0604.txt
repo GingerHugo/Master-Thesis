@@ -1,0 +1,122 @@
+loading word vector...
+loading testing vector...
+loading testing entry vector...
+model architecture: CNN-non-static
+loading data...
+data loaded!
+discourse_manual_corrected model is being training
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 79.776653 %, val perf 78.886191
+epoch 2, train perf 80.762483 %, val perf 79.450683
+epoch 3, train perf 81.477058 %, val perf 79.599393
+epoch 4, train perf 82.162955 %, val perf 79.969651
+epoch 5, train perf 82.601215 %, val perf 79.899848
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.858085808581, with 1560 in 1818
+test_perf for negative context entry is 0.931964503219, with 5356 in 5747
+test_perf for context entry is 0.914210178453, with 6916 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.953316590338, with 12906 in 13538
+test_perf for negative testing document entry is 0.909993443851, with 9716 in 10677
+test_perf for testing document entry is 0.934214329961, with 22622 in 24215
+loading data...
+data loaded!
+naive_manual_corrected model is being training
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 82.274383 %, val perf 81.405548
+epoch 2, train perf 83.416863 %, val perf 82.108322
+epoch 3, train perf 83.954465 %, val perf 81.976222
+epoch 4, train perf 85.021445 %, val perf 82.383091
+epoch 5, train perf 85.371915 %, val perf 82.541612
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.849284928493, with 1544 in 1818
+test_perf for negative context entry is 0.936314598921, with 5381 in 5747
+test_perf for context entry is 0.915399867812, with 6925 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.935219382479, with 12661 in 13538
+test_perf for negative testing document entry is 0.921700852299, with 9841 in 10677
+test_perf for testing document entry is 0.929258723931, with 22502 in 24215
+loading data...
+data loaded!
+discourse_automatic model is being training
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 77.759864 %, val perf 76.392157
+epoch 2, train perf 78.811426 %, val perf 76.962963
+epoch 3, train perf 79.639797 %, val perf 76.954248
+epoch 4, train perf 80.372791 %, val perf 77.481481
+epoch 5, train perf 80.989107 %, val perf 77.490196
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.875137513751, with 1591 in 1818
+test_perf for negative context entry is 0.875413259092, with 5031 in 5747
+test_perf for context entry is 0.87534699273, with 6622 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.972152459743, with 13161 in 13538
+test_perf for negative testing document entry is 0.834597733446, with 8911 in 10677
+test_perf for testing document entry is 0.91150113566, with 22072 in 24215
+loading data...
+data loaded!
+naive_automatic model is being training
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 80.452555 %, val perf 79.254237
+epoch 2, train perf 81.872851 %, val perf 80.021186
+epoch 3, train perf 82.918295 %, val perf 80.419492
+epoch 4, train perf 83.864846 %, val perf 80.563559
+epoch 5, train perf 84.597598 %, val perf 80.631356
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.856435643564, with 1557 in 1818
+test_perf for negative context entry is 0.884113450496, with 5081 in 5747
+test_perf for context entry is 0.877461996034, with 6638 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.948072093367, with 12835 in 13538
+test_perf for negative testing document entry is 0.861852580313, with 9202 in 10677
+test_perf for testing document entry is 0.910055750568, with 22037 in 24215
+loading training vector...
+training CNN using whole entry ...
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 94.661677 %, val perf 94.561485
+epoch 2, train perf 95.418323 %, val perf 95.034803
+epoch 3, train perf 95.920000 %, val perf 94.932715
+epoch 4, train perf 96.262194 %, val perf 95.039443
+epoch 5, train perf 96.528000 %, val perf 95.020882
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.766226622662, with 1393 in 1818
+test_perf for negative context entry is 0.968331303289, with 5565 in 5747
+test_perf for context entry is 0.919762062128, with 6958 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.943196927168, with 12769 in 13538
+test_perf for negative testing document entry is 0.953638662546, with 10182 in 10677
+test_perf for testing document entry is 0.947800949824, with 22951 in 24215
+loading context training vector...
+training CNN using whole context entry ...
+sentence length =   70
+[('image shape', 70, 400), ('filter shape', [(100, 1, 3, 400), (100, 1, 4, 400), (100, 1, 5, 400)]), ('hidden_units', [100, 2]), ('dropout', [0.5]), ('batch_size', 50), ('non_static', True), ('learn_decay', 0.95), ('conv_non_linear', 'relu'), ('non_static', True), ('sqr_norm_lim', 9), ('shuffle_batch', True)]
+... training
+epoch 1, train perf 90.602941 %, val perf 89.970588
+epoch 2, train perf 92.383987 %, val perf 91.029412
+epoch 3, train perf 93.354575 %, val perf 91.161765
+epoch 4, train perf 94.052288 %, val perf 91.250000
+epoch 5, train perf 94.723856 %, val perf 91.632353
+... testing context testing
+... testing context entry
+test_perf for positive context entry is 0.800330033003, with 1455 in 1818
+test_perf for negative context entry is 0.949364886027, with 5456 in 5747
+test_perf for context entry is 0.913549239921, with 6911 in 7565
+... testing document entry
+test_perf for positive testing document entry is 0.848352784754, with 11485 in 13538
+test_perf for negative testing document entry is 0.940994661422, with 10047 in 10677
+test_perf for testing document entry is 0.889200908528, with 21532 in 24215
